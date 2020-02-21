@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- My Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Page Admin</title>
+</head>
+<body>
+    <!--SideBar-->
+    <div class="sideBar">
+        <a href="#" class="logo">Acel Networks</a>
+        <div class="sideBar__FirstMenu">
+            <ul>
+                <li>
+                    <a href="#">Dashboards</a>
+                    <span>12</span>
+                </li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Institutions</a></li>
+            </ul>
+        </div>
+        <div class="sideBarMenu2">
+            <h3>Transactions</h3>
+             <div class="sideBar__SecondMenu">
+                <ul>
+                    <li><a href="#">ISO</a></li>
+                    <li>
+                        <a href="#">Transactions</a>
+                        <span class="Transaction">12</span>
+                    </li>
+                    <li><a href="#">Rewards</a></li>
+                    <li>
+                        <a href="#">Frauds</a>
+                        <span class="Frauds">12</span>
+                    </li>
+                    <li><a href="#">Monitors</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sideBarMenu2 last">
+            <h3>Supports</h3>
+            <div class="sideBar__SecondMenu">
+                <ul>
+                    <li>
+                        <a href="#">Enrolments</a>
+                        <span class="Enrolement">12</span>
+                    </li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- box Content-->
+    <div class="boxContent">
+
+        <!-- NavBar-->
+        <nav class="nav">
+            <a href="#" class="linkProfil">Profile</a>
+            <div class="nav__Right">
+                <form action="">
+                    <input type="text" placeholder="Search">
+                </form>
+                <div class="nav__Circle">
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- Contenu Du Profil -->
+        <div class="Principal__Content">
+
+            <!--Part Left-->
+            <div class="PartLeft">
+                <div class="User__Info">
+                    <div class="User__Circle">
+                        <img src="img/profil.jpg" alt="MonImage">
+                    </div>
+                    <h4>Jim Jackson</h4>
+                    <p>Admin</p>
+                </div>
+                <div class="subAdminos">
+                    <h4>Sub Admin</h4>
+                    <span class="sub">9</span>
+                </div>
+                <div class="subAdmins__Item">
+                    <div class="Illustration__Item">
+                        <img src="img/profilUser.jpg" alt="MonImage">
+                    </div>
+                    <div class="Description__Item">
+                        <h5>John Alli</h5>
+                        <p>1234567</p>
+                    </div>
+                </div>
+                <div class="subAdmins__Item">
+                    <div class="Illustration__Item">
+                        <img src="img/man1.jpg" alt="MonImage">
+                    </div>
+                    <div class="Description__Item">
+                        <h5>John Alli</h5>
+                        <p>1234567</p>
+                    </div>
+                </div>
+                <div class="subAdmins__Item">
+                    <div class="Illustration__Item">
+                        <img src="img/man2.jpg" alt="MonImage">
+                    </div>
+                    <div class="Description__Item">
+                        <h5>John Alli</h5>
+                        <p>1234567</p>
+                    </div>
+                </div>
+                <div class="subAdmins__Item">
+                    <div class="Illustration__Item">
+                        <img src="img/man3.jpg" alt="MonImage">
+                    </div>
+                    <div class="Description__Item">
+                        <h5>John Alli</h5>
+                        <p>1234567</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Part Right -->
+            <div class="PartRight">
+                <form action="">
+                    <div class="Head__ModifyForm">
+                        <h4>Profile Details</h4>
+                        <button type="submit">Save</button>
+                    </div>
+                    <div class="FormChamps">
+                        <div class="FormChamps__Left">
+                            <label for="FirstName">First Name</label>
+                            <input type="text" placeholder="Enter your First Name" id="FirstName" name="">
+                        </div>
+                        <div class="FormChamps__Right">
+                            <label for="LastName">Last Name</label>
+                            <input type="text" placeholder="Enter your Last Name" id="LastName" name="">
+                        </div>
+                    </div>
+                    <div class="FormChamps">
+                        <div class="FormChamps__Left">
+                            <label for="Email">Email Address</label>
+                            <input type="email" placeholder="Exple: ahhgstdfd@gmail.com" id="Email" name="">
+                        </div>
+                        <div class="FormChamps__Right">
+                            <label for="UserId">User ID</label>
+                            <input type="text" placeholder="Enter Your user ID" id="UserId" name="">
+                        </div>
+                    </div>
+                    <div class="FormChamps">
+                        <div class="FormChamps__Left">
+                            <label for="Account">Account Type</label>
+                            <input type="text" placeholder="Enter your First Name" id="Account" name="">
+                        </div>
+                        <div class="FormChamps__Right">
+                            <label for="Designation">Designation</label>
+                            <input type="text" placeholder="Exple: Network Engeener" id="Designation" name="">
+                        </div>
+                    </div>
+                    <div class="FormChamps">
+                        <div class="FormChamps__Left">
+                            <label for="Institut">Institut Filter</label>
+                            <input type="text" placeholder="Exple: none" id="Institut" name="">
+                        </div>
+                        <div class="FormChamps__Right">
+                            <label for="Merchant">Merchant Filter</label>
+                            <input type="text" placeholder="Exple: Advanced" id="Merchant" name="">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

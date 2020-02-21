@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root{
+    --color-black: black;
+    --color-white: white;
+    --color-bg: #f8f1ff;
+    --color-grey: #868b9c;
+    --color-green: #00d34e;
+    --color-bg-input: #fcfcfd;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+/* --- General --- */
+a
+{
+    text-decoration: none;
+}
+
+span
+{
+    padding: 2px;
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--color-white);
+    border-radius: 4px;
+    float: right;
+}
+/*-- SideBar --*/
+.sideBar
+{
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    background-color: white;
+    border-right: 1px solid #ccc;
+    padding: 20px 0px;
+}
+
+.logo
+{
+    color: var(--color-black);
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 50px;
+}
+
+.sideBar ul li:hover a
+{
+    color: var(--color-green);
+}
+
+.sideBar__FirstMenu
+{
+    padding-top: 10px ;
+    padding-left: 30px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.sideBar__FirstMenu ul
+{
+    list-style: none;
+}
+
+.sideBar__FirstMenu ul li
+{
+    margin-top: 10px;
+}
+
+.sideBar__FirstMenu ul li a
+{
+    color: var(--color-grey);
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.sideBar__FirstMenu ul li span
+{
+    background-color: #ff5a54;
+}
+
+.sideBarMenu2
+{ 
+  padding: 10px;
+  border-bottom: 1px solid var(--color-bg);
+}
+
+.sideBarMenu2 h3
+{
+    font-size: 15px;
+    color: var(--color-black);
+    font-weight: bold;
+}
+.sideBar__SecondMenu
+{
+    padding-left: 20px;
+}
+
+.sideBar__SecondMenu ul
+{
+    list-style: none;
+}
+
+.sideBar__SecondMenu ul li
+{
+    margin-top: 20px;
+}
+
+.sideBar__SecondMenu ul li a
+{
+    color: var(--color-grey);
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.Transaction
+{
+    background: var(--color-green);
+}
+
+.Frauds
+{
+    background-color: #f8d881;
+}
+
+.last
+{
+    border: none;
+}
+
+.Enrolement
+{
+    background-color: #c900f8;
+}
+
+/*-- box content --*/
+.boxContent
+{
+    height: 100vh;
+    margin-left: 200px;
+    background: var(--color-bg);
+    padding-left: 30px;
+}
+
+/*-- NavBar --*/
+.nav
+{
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.linkProfil
+{
+    margin-left: 20px;
+    font-size: 18px;
+    color: var(--color-black);
+}
+
+.nav__Right
+{
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.nav__Right form input
+{
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: var(--color-bg);
+    padding-left: 20px;
+}
+.nav__Circle
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: var(--color-black);
+    margin-left: 10px;
+}
+
+/*-- Principal Content --*/
+.Principal__Content
+{
+    display: flex;
+    margin-top: 20px;
+}
+
+/*-- Part Left --*/
+.PartLeft
+{
+    flex: 1;
+    min-height: 300px;
+    background: var(--color-white);
+    margin-right: 20px;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
+.User__Info
+{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.User__Circle
+{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+   /* background: var(--color-black); */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 13px 0;
+}
+
+.User__Circle img
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.User__Info h4
+{
+    font-size: 17px;
+    color: var(--color-black);
+    margin-bottom: 7px;
+}
+
+.User__Info p
+{
+    font-size: 15px;
+    color: var(--color-grey);
+    margin-bottom: 20px;
+}
+
+.subAdminos
+{
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.subAdminos h4
+{
+    margin-right: 20px;
+    font-size: 15px;
+    color: var(--color-black);
+}
+.sub
+{
+    background: #eceaf0;
+    padding: 2.5px 5px;
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--color-grey);
+    border-radius: 4px;
+}
+
+.subAdmins__Item
+{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.Illustration__Item
+{
+    height: 50px;
+    width: 20%;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.Illustration__Item img
+{
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.Description__Item h5
+{
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.Description__Item p
+{
+    color: var(--color-grey);
+    font-size: 12px;
+}
+
+
+/*-- Part Right --*/
+.PartRight
+{
+    flex: 2;
+    min-height: 400px;
+    background: var(--color-white);
+    border-radius: 5px;
+    padding: 35px;
+}
+
+/*-- Part Rigth Head Form --*/
+.Head__ModifyForm
+{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 25px;
+}
+
+.Head__ModifyForm h4
+{
+    font-size: 15px;
+}
+
+.Head__ModifyForm button
+{
+    font-size: 15px;
+    color: var(--color-green);
+    border: none;
+    background-color: white;
+}
+
+/*-- Input Of Form alias FormChamps --*/
+.FormChamps
+{
+    display: flex;
+    margin-top: 20px;
+}
+
+.FormChamps div
+{
+    flex: 1;
+    height: 70px;
+    background: var(--color-bg-input);
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.FormChamps div:hover
+{
+    border-left: 5px solid #7f00ed;
+}
+
+.FormChamps label
+{
+    color: var(--color-grey);
+    font-size: 17px;
+    display: block;
+}
+
+.FormChamps input
+{
+    border: none;
+    margin-top: 10px;
+    background: var(--color-bg-input);
+    font-size: 13px;
+}
+
+
+/*-- FormChamps Left --*/
+.FormChamps__Left
+{
+    margin-right: 20px;
+    /*
+    flex: 1;
+    height: 70px;
+    background: var(--color-bg-input);
+    border-radius: 5px;
+    padding: 10px 25px;
+    border: 1px solid #ccc; */
+}
+
+/*-- FormChamps Right
+.FormChamps__Right
+{
+    flex: 1;
+    height: 70px;
+    background: var(--color-bg-input);
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+--*/
